@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+<tiles-definitions>  
+   <!-- Base Define -->
+   <definition name="auth.base.definition" 
+       template="/WEB-INF/jsp/jsp/auth/index.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="body" value="" />
+       <put-attribute name="footer" value="/WEB-INF/jsp/jsp/auth/footer.jsp" />   
+<!--       <put-attribute name="header" value="" />  -->
+<!--       <put-attribute name="footer" value="/WEB-INF/jsp/jsp/footer" /> -->
+       
+   </definition>  
+   
+ 
+   <definition name="homePage" extends="auth.base.definition">  
+       <put-attribute name="title" value="Home Page" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/jsp/auth/home.jsp" />  
+   </definition>
+   <definition name="loginPage" extends="auth.base.definition">  
+       <put-attribute name="title" value="Login Page" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/jsp/auth/login.jsp" />  
+   </definition>
+   
+   <definition name="signupPage" extends="auth.base.definition">  
+       <put-attribute name="title" value="Registration page" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/jsp/auth/signup.jsp" />  
+   </definition>
+   <definition name="startPage" extends="auth.base.definition">  
+       <put-attribute name="title" value="start page" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/jsp/auth/about.jsp" />  
+   </definition>
+    <definition name="contactPage" extends="auth.base.definition">  
+       <put-attribute name="title" value="Contact Page page" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/jsp/auth/contact.jsp" />  
+   </definition>
+      <definition name="libraryPage" extends="auth.base.definition">  
+       <put-attribute name="title" value="Contact Page page" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/jsp/auth/library.jsp" />  
+   </definition>
+    
+
+</tiles-definitions>

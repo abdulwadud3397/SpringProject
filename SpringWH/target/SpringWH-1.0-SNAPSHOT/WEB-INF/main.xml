@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+      
+<tiles-definitions>
+    <!-- Base Define -->
+    <definition name="main.base.definition" 
+                template="/WEB-INF/jsp/jsp/mainProject/index.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="body" value="" /> 
+        <put-attribute name="footer" value="/WEB-INF/jsp/jsp/mainProject/footer.jsp" />  
+        <put-attribute name="header" value="/WEB-INF/jsp/jsp/mainProject/header.jsp" />
+        
+        <!--       <put-attribute name="header" value="" />  -->
+        <!--       <put-attribute name="footer" value="/WEB-INF/jsp/jsp/footer" /> -->  
+    </definition>
+    <definition name="mainPage" extends="main.base.definition">  
+        <put-attribute name="title" value="Main Page" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/jsp/mainProject/product.jsp" /> 
+    </definition>
+    <definition name="productsPage" extends="main.base.definition">  
+        <put-attribute name="title" value="Products Page" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/jsp/mainProject/products.jsp" /> 
+    </definition>
+    <definition name="servicePage" extends="main.base.definition">  
+        <put-attribute name="title" value="Service Page" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/jsp/mainProject/service.jsp" /> 
+    </definition>
+    <definition name="bookingPage" extends="main.base.definition">  
+        <put-attribute name="title" value="Booking Page" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/jsp/mainProject/booking.jsp" /> 
+    </definition>
+    <definition name="packagePage" extends="main.base.definition">  
+        <put-attribute name="title" value="Package Page" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/jsp/mainProject/package.jsp" /> 
+    </definition>
+    <definition name="packageBookingPage" extends="main.base.definition">  
+        <put-attribute name="title" value="Package Page" />  
+        <put-attribute name="body" value="/WEB-INF/jsp/jsp/mainProject/packageBooking.jsp" /> 
+    </definition>
+</tiles-definitions>

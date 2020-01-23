@@ -1,0 +1,12 @@
+io\bitsofts\springwh\model\Service.class
+io\bitsofts\springwh\model\Product.class
+io\bitsofts\springwh\model\Booking.class
+io\bitsofts\springwh\repository\BookingRepository.class
+io\bitsofts\springwh\repository\ServiceRepository.class
+io\bitsofts\springwh\model\Products.class
+io\bitsofts\springwh\authController\AuthController.class
+io\bitsofts\springwh\repository\UserRepository.class
+io\bitsofts\springwh\authController\DashboardController.class
+io\bitsofts\springwh\model\User.class
+io\bitsofts\springwh\repository\ProductsRepository.class
+io\bitsofts\springwh\repository\ProductRepository.class
